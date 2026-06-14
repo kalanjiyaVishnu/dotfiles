@@ -54,14 +54,22 @@ if ! command -v stow >/dev/null 2>&1; then
 fi
 
 echo ">> Stowing into \$HOME: ${PACKAGES[*]}"
+FAILED=()
 for pkg in "${PACKAGES[@]}"; do
   if [ ! -d "$pkg" ]; then
     echo "   !! skipping '$pkg' (no such package dir)" >&2
     continue
   fi
   echo "   -> $pkg"
-  stow "${STOW_FLAGS[@]}" "$pkg"
+  # Don't let one conflicting package abort the whole run (set -e).
+  if ! stow "${STOW_FLAGS[@]}" "$pkg"; then
+    echo "   !! '$pkg' had conflicts; left untouched. Resolve and re-run: ./install.sh $pkg" >&2
+    FAILED+=("$pkg")
+  fi
 done
+if [ "${#FAILED[@]}" -gt 0 ]; then
+  echo ">> Skipped due to conflicts: ${FAILED[*]}" >&2
+fi
 
 # ---- keyd (system config, requires sudo) ----
 if [ "$DO_KEYD" -eq 1 ] && { [ "${#SELECTED[@]}" -eq 0 ] || printf '%s\n' "${SELECTED[@]}" | grep -qx keyd; }; then
