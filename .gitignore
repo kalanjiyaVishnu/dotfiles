@@ -1,0 +1,35 @@
+# ---- Secrets & credentials (never commit) ----
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.gpg
+*.kdbx
+.env
+.env.*
+*.secret
+*secret*
+*credential*
+*token*
+known_hosts
+authorized_keys
+
+# ---- Machine-local / volatile state (do not track) ----
+fish_variables
+**/fish/fish_variables
+
+# ---- Editor / OS noise ----
+*.bak
+*.backup
+*.backup.*
+*.swp
+*~
+.DS_Store
+
+# ---- Notes ----
+# This repo is organized as GNU Stow packages. Each top-level dir is a
+# package whose tree mirrors $HOME (e.g. fish/.config/fish/...).
+# `keyd/` is special-cased and installed by install.sh (see script).
