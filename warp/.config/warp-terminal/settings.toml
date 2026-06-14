@@ -1,0 +1,49 @@
+[appearance]
+
+[appearance.themes]
+system_theme = false
+theme = "dark"
+
+[appearance.vertical_tabs]
+enabled = false
+
+[terminal]
+
+[terminal.input]
+input_box_type_setting = "universal"
+
+[agents]
+cloud_conversation_storage_enabled = true
+
+[agents.warp_agent]
+is_any_ai_enabled = true
+
+[agents.warp_agent.input]
+nld_in_terminal_enabled = false
+
+[agents.warp_agent.other]
+show_agent_notifications = true
+show_conversation_history = true
+
+[agents.third_party]
+should_render_cli_agent_toolbar = true
+
+[account]
+is_settings_sync_enabled = true
+
+[general]
+default_session_mode = "agent"
+
+[code]
+
+[code.editor]
+show_code_review_button = true
+show_project_explorer = true
+show_global_search = true
+
+[warp_drive]
+enabled = true
+
+[privacy]
+telemetry_enabled = true
+crash_reporting_enabled = true
