@@ -21,6 +21,11 @@ authorized_keys
 fish_variables
 **/fish/fish_variables
 
+# Omarchy-managed absolute symlinks (point into ~/.config/omarchy; dangling on
+# other machines and break `stow`). Theme is owned by Omarchy, not this repo.
+btop/.config/btop/themes/current.theme
+**/mako/config
+
 # ---- Editor / OS noise ----
 *.bak
 *.backup
