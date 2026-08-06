@@ -181,3 +181,5 @@ set -x PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/emulator $ANDROID_HOME/cm
 set -x PATH $KIBANA_HOME/bin $PATH
 set -x PATH $SPARK_HOME/bin $SPARK_HOME/sbin $PATH
 export PATH="$HOME/.local/bin:$PATH"
+
+alias ontodivm="ssh -i .ssh/ontodi_key ontodi@200.97.164.78"
