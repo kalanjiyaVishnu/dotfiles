@@ -174,6 +174,9 @@ set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 
 export DOTNET_ROOT=$HOME/.dotnet
+set -x ANDROID_HOME $HOME/Android/Sdk
+set -x ANDROID_SDK_ROOT $HOME/Android/Sdk
+set -x PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/emulator $ANDROID_HOME/cmdline-tools/latest/bin $PATH
 # source "$HOME/.cargo/env.fish"
 set -x PATH $KIBANA_HOME/bin $PATH
 set -x PATH $SPARK_HOME/bin $SPARK_HOME/sbin $PATH

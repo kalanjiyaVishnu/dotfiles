@@ -1,4 +1,5 @@
 [global_config]
+  ask_before_closing = never
 [keybindings]
 [profiles]
   [[default]]
