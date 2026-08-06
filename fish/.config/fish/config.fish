@@ -97,7 +97,7 @@ alias fish_e="code ~/.config/fish/config.fish"
 # Another
 alias casa_qa="ssh -i ~/.ssh/casa-qa ubuntu@api.casaqa.ajira.tech"
 alias casa_prod="ssh -i ~/.ssh/casa-production ubuntu@deploy.casa.ajira.tech"
-alias casa_project_vm="ssh -i "~/.ssh/Casa-Retail-QA-Server-KP.pem" ubuntu@13.127.0"
+alias casa_project_vm="ssh -i "~/.ssh/Casa-Retail-QA-Server-KP.pem" ubuntu@13.127.6.0"
 alias es_prod="ssh -i ~/.ssh/casa-production -nNt -L 9404:localhost:9200 ubuntu@deploy.casa.ajira.tech"
 alias es_qa="ssh -i ~/.ssh/casa-qa -nNt -L 9403:localhost:9200 ubuntu@api.casaqa.ajira.tech"
 # alias ch_prod="clickhouse-client --host casa-clickhouse.cloud.ajira.tech --password <REDACTED-SEE-PASSWORD-MANAGER> --port 9000"
