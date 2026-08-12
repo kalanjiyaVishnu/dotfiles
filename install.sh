@@ -24,7 +24,7 @@ cd "$DOTFILES_DIR"
 
 # Home-targeted stow packages (each mirrors $HOME).
 ALL_PACKAGES=(fish bash git niri alacritty kitty ghostty terminator warp \
-              noctalia starship waybar btop fastfetch cava)
+              noctalia starship waybar btop fastfetch cava user_scripts)
 
 STOW_FLAGS=(--verbose --target="$HOME" --restow)
 DO_KEYD=1

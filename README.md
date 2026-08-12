@@ -29,6 +29,7 @@ dotfiles/
 ├── noctalia/.config/noctalia/    # Noctalia settings + colorschemes
 ├── starship/.config/starship.toml
 ├── waybar/  btop/  fastfetch/  cava/   # extra .config packages
+├── user_scripts/user_scripts/     # personal shell scripts -> ~/user_scripts/
 ├── install.sh                    # symlink everything via stow
 ├── bootstrap.sh                  # fresh-machine setup (packages + stow)
 ├── pkglist.txt                   # pacman -Qqe   (explicitly installed)
@@ -82,9 +83,9 @@ This repo is scrubbed of credentials:
 - `.gitignore` blocks `*.pem`, `*.key`, SSH keys, `.env`, `fish_variables`,
   and other secret/state patterns.
 
-> Note: `config.fish` still contains **internal SSH host aliases** (hostnames /
-> IPs for work infrastructure) by choice. Keep this repository **private**, or
-> run a further scrub before making it public.
+> Note: `config.fish` and `user_scripts/es.sh` still contain **internal SSH
+> host aliases** (hostnames / IPs for work infrastructure) by choice. Keep this
+> repository **private**, or run a further scrub before making it public.
 
 ## Not included (intentionally)
 
