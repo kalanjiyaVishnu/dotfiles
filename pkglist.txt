@@ -1,12 +1,15 @@
 aether
 alacritty
+android-studio
 antigravity
 asdcontrol
+audiorelay
 awww
 base
 base-devel
 bash-completion
 bat
+bind
 bluetui
 bluez-utils
 bolt
@@ -30,6 +33,7 @@ docker-compose
 dust
 efibootmgr
 evince
+evtest
 exfatprogs
 expac
 eza
@@ -144,9 +148,13 @@ polkit-gnome
 postgresql
 postgresql-libs
 power-profiles-daemon
+python-build
 python-gobject
+python-hatch-vcs
+python-installer
 python-poetry-core
 python-terminaltexteffects
+python-wheel
 qbittorrent
 qt5-wayland
 qt6-tools
@@ -163,7 +171,9 @@ sof-firmware
 stacer
 starship
 stirling-pdf-bin
+stow
 sublime-merge
+supabase-bin
 sushi
 swaybg
 swayosd
@@ -191,6 +201,7 @@ vlc
 warp-terminal
 waybar
 wayfreeze
+wev
 wget
 whois
 wireless-regdb

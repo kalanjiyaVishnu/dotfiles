@@ -1,4 +1,6 @@
+android-studio
 antigravity
+audiorelay
 brave-origin-nightly-bin
 clickhouse
 dnslookup
@@ -15,4 +17,5 @@ noctalia-shell-git
 stacer
 stirling-pdf-bin
 sublime-merge
+supabase-bin
 thinkfan-ui
